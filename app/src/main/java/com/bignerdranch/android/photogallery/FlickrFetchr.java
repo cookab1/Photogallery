@@ -30,7 +30,7 @@ public class FlickrFetchr {
 
         try {
             ByteArrayOutputStream out = new ByteArrayOutputStream();
-            InputStream in = connection.getInputStream();
+            InputStream in = connection.getInputStream(); //Not working
 
             if(connection.getResponseCode() != HttpURLConnection.HTTP_OK) {
                 throw new IOException(connection.getResponseMessage() + ": with " + urlSpec);
