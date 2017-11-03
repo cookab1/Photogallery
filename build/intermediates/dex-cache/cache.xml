@@ -3,21 +3,21 @@
 
     <item
         is-multidex="true"
-        jar="C:\Users\cookab1\AndroidStudioProjects\cs5240-f17-photogallery-cookab1\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.1"
-        sha1="cc12efcb6b6560c195351852196f5a4fccfc25f9">
-        <dex dex="C:\Users\cookab1\AndroidStudioProjects\cs5240-f17-photogallery-cookab1\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_785bdcd25133de35c284aa59aad24ae83b2b0c66\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\cookab1\AndroidStudioProjects\cs5240-f17-photogallery-cookab1\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jar="C:\Users\user\AndroidStudioProjects\cs5240-f17-photogallery-cookab1\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.1"
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="C:\Users\cookab1\AndroidStudioProjects\cs5240-f17-photogallery-cookab1\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_6ab34bfb08b1782584ec0dfb484a0d4149647cbd\classes.dex" />
+        <dex dex="C:\Users\user\AndroidStudioProjects\cs5240-f17-photogallery-cookab1\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_7fddf779d36819261480b4f303528b520abb174f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\user\AndroidStudioProjects\cs5240-f17-photogallery-cookab1\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="4852f0029d01c8cfe776f69e942a681e488fbf2b">
+        <dex dex="C:\Users\user\AndroidStudioProjects\cs5240-f17-photogallery-cookab1\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_5596b3b888021cc05b015118095d6090a2f07213\classes.dex" />
     </item>
 
 </items>
