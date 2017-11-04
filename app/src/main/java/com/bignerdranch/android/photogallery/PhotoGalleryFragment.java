@@ -96,7 +96,7 @@ public class PhotoGalleryFragment extends Fragment {
         menuInflater.inflate(R.menu.fragment_photo_gallery, menu);
 
         MenuItem searchItem = menu.findItem(R.id.menu_item_search);
-        //searchItem.setActionView(new SearchView(R.id.menu_item_search));
+        searchItem.setActionView(new SearchView(getActivity()));
         final SearchView searchView = (SearchView) searchItem.getActionView();
 
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
