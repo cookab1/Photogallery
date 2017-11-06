@@ -5,15 +5,13 @@ import android.support.v4.app.FragmentManager;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-import com.bignerdranch.android.photogallery.R;
-
 /**
  * Created by user on 9/18/2017.
  */
 
 public abstract class SingleFragmentActivity extends AppCompatActivity {
 
-    protected abstract Fragment createFragment();
+    protected abstract PhotoGalleryFragment createFragment();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

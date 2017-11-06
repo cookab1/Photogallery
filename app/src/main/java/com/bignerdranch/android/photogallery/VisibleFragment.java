@@ -1,10 +1,10 @@
 package com.bignerdranch.android.photogallery;
 
-import android.app.Fragment;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.support.v4.app.Fragment;
 import android.widget.Toast;
 
 /**
@@ -13,6 +13,10 @@ import android.widget.Toast;
 
 public abstract class VisibleFragment extends Fragment {
     private static final String TAG = "VisibleFragment";
+
+    public VisibleFragment() {
+        super();
+    }
 
     @Override
     public void onStart() {
