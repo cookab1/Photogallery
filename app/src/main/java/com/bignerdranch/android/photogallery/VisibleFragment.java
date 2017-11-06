@@ -1,11 +1,12 @@
 package com.bignerdranch.android.photogallery;
 
+import android.app.Activity;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.support.v4.app.Fragment;
-import android.widget.Toast;
+import android.util.Log;
 
 /**
  * Created by user on 11/6/2017.
@@ -22,7 +23,7 @@ public abstract class VisibleFragment extends Fragment {
     public void onStart() {
         super.onStart();
         IntentFilter filter = new IntentFilter(PollService.ACTION_SHOW_NOTIFICATION);
-        getActivity().registerReceiver(mOnShowNotification, filter);
+        getActivity().registerReceiver(mOnShowNotification, filter, PollService.PERM_PRIVATE, null); // Makes my app the only app that can trigger the receiver
     }
 
     @Override
@@ -34,10 +35,9 @@ public abstract class VisibleFragment extends Fragment {
     private BroadcastReceiver mOnShowNotification = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
-            Toast.makeText(getActivity(),
-                    "Got a broadcast:" + intent.getAction(),
-                    Toast.LENGTH_LONG)
-                    .show();
+            // If we receive this, we're visible, so cancel the notification
+            Log.i(TAG, "canceling notification");
+            setResultCode(Activity.RESULT_CANCELED);
         }
     };
 }
